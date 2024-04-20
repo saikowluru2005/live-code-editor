@@ -24,12 +24,14 @@
     </div>
 
     <script>
-        let htmlcode = document.getElementById("html-code");
-        let csscode = document.getElementById("css-code");
-        let jscode = document.getElementById("js-code");
-        let output = document.getElementById("output");
-
-        output.src = "data:text/html, <html><body>"
+        function run() {
+            let htmlcode = document.getElementById("html-code").value;
+            let csscode = document.getElementById("css-code").value;
+            let jscode = document.getElementById("js-code").value;
+            let output = document.getElementById("output");
+            output.contentDocument.body.innerHTML = htmlcode + "<style>" + csscode + "</style>";
+            output.contentWindow.eval(jscode);
+        }
     </script>
 </body>
 
