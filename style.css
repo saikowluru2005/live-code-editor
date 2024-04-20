@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: impostograph, sans-serif;
 }
 
 html {
@@ -12,6 +12,37 @@ html {
 body {
     background-color: black;
     color: lightgray;
+    background-image: url("bg.jpg");
+}
+
+.intro img {
+    margin-left: 180px;
+}
+
+.intro button {
+    padding: 10px;
+    font-size: 60px;
+    &:hover {
+        background: transparent;
+        color: white;
+        border: 2px solid whitesmoke;
+    }
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding-top: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .container {
@@ -24,4 +55,37 @@ body {
 .left {
     flex-basis: 10%;
     padding: 10px;
+}
+
+.left textarea {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 600;
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.right {
+    flex-basis: 90%;
+    background-color: whitesmoke;
+    color: lightgrey;
+    margin-top: 80px;
+}
+
+.right iframe {
+    background-color: grey;
+    height: 1548px;
+    width: 780px;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.img label {
+    font-size: 25px;
+    font-family: impostograph, sans-serif;
+    color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 700;
 }

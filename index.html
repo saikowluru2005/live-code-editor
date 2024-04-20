@@ -9,19 +9,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="left">
-            <label for="">HTML</label>
-            <textarea name="html" id="html-code" cols="30" rows="10" onkeyup="run()"></textarea>
-            <label for="">CSS</label>
-            <textarea name="css" id="css-code" cols="30" rows="10" onkeyup="run()"></textarea>
-            <label for="">JS</label>
-            <textarea name="js" id="js-code" cols="30" rows="10" onkeyup="run()"></textarea>
-        </div>
-        <div class="right">
-            <iframe src="" frameborder="0" id="output"></iframe>
-        </div>
+    <div class="intro">
+        <h1>Welcome to <span>CODE EDITOR</span></h1>
+        <p>HTML, CSS, and JS</p>
+        <img src="intro_bg.png" height="500px" alt="">
+        <a href="#main">
+            <button>CODE NOW</button></a>
     </div>
+    <section id="main">
+        <div class="code">
+
+            <div class="container">
+                <div class="left">
+                    <div class="img" style="display: flex;align-items:center;"><img src="red.png" height="70px" width="70px" alt="">
+                        <label for="">HTML</label></div>
+                    <textarea name="html" id="html-code" cols="100" rows="18" onkeyup="run()"></textarea>
+                    <div class="img" style="display: flex;align-items:center;"><img src="blue.png" height="70px" width="70px" alt="">
+                        <label for="">CSS</label></div>
+                    <textarea name="css" id="css-code" cols="100" rows="18" onkeyup="run()"></textarea>
+                    <div class="img" style="display: flex;align-items:center;"><img src="pink.png" height="70px" width="70px" alt="">
+                        <label for="">JS</label></div>
+                    <textarea name="js" id="js-code" cols="100" rows="18" onkeyup="run()"></textarea>
+                </div>
+                <div class="right">
+                    <iframe src="" frameborder="0" id="output"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
         function run() {
